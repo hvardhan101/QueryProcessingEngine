@@ -1,0 +1,7 @@
+select=cust, month ,    avg_quant, x_avg_quant, y_avg_quant
+from=sales
+where=year = 1997
+group_by=cust , month: x              , y
+number=2
+such_that=x_cust = cust and x_month < month, y_cust = cust and y_month > month
+having=

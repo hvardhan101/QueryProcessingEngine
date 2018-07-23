@@ -1,0 +1,7 @@
+select=cust, prod, x_avg_quant, y_avg_quant
+from=sales
+where=
+group_by=cust,prod: x              , y
+number=2
+such_that=x_cust = cust and x_prod = prod , y_cust <> cust and y_prod = prod
+having=

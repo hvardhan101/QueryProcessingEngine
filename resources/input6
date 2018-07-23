@@ -1,0 +1,7 @@
+select=prod, quant
+from=sales
+where=
+group_by=prod,quant: x              , y
+number=2
+such_that=x_prod = prod, y_quant < quant and y_prod = prod
+having=y_count_prod = x_count_prod / 2
